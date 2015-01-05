@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.bupt.niclab.activities.FeedbackActivity">
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bar_bg"
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/send_btn"
+            android:background="@drawable/green_btn_bg"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:onClick="onSendBtnCLicked"
+            android:layout_alignParentRight="true"
+            android:text="@string/send"
+            android:maxHeight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/edit_text" />
+        <!--<ImageButton
+            android:id="@+id/switch_btn"
+            android:background="@drawable/ddv"
+            android:layout_centerVertical="true"
+            android:src="@drawable/keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/white_bg"
+            android:layout_toLeftOf="@id/send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/list_view"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:transcriptMode="normal"
+        android:layout_above="@id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/hint"
+        android:text="hhhhh"
+        android:background="@drawable/hint_bg"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

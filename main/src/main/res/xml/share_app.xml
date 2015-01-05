@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2012-2014 Arne Schwabe
+  ~ Distributed under the GNU GPL v2. For full terms see the file doc/LICENSE.txt
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/select_platform" android:key="platform">
+        <Preference
+            android:defaultValue="false"
+            android:key="qq"
+            android:icon="@drawable/logo_qq_sns_icon_58"
+            android:title="@string/platform_qq"/>
+        <Preference
+            android:defaultValue="false"
+            android:key="qzone"
+            android:icon="@drawable/logo_qq_space_sns_icon_58"
+            android:title="@string/platform_qq_space"/>
+        <Preference
+            android:defaultValue="false"
+            android:key="tecent_weibo"
+            android:icon="@drawable/logo_tencent_weibo_icon_58"
+            android:title="@string/platform_tencentweibo"/>
+        <Preference
+            android:defaultValue="false"
+            android:key="sinaweibo"
+            android:icon="@drawable/logo_sinaweibo_icon_58"
+            android:title="@string/platform_sinaweibo"/>
+        <Preference
+            android:defaultValue="false"
+            android:key="wechat"
+            android:icon="@drawable/logo_weixin_icon_58"
+            android:title="@string/platform_weixin"/>
+        <Preference
+            android:defaultValue="false"
+            android:key="douban"
+            android:icon="@drawable/logo_douban_icon_58"
+            android:title="@string/platform_douban"/>
+        <Preference
+            android:defaultValue="false"
+            android:key="renren"
+            android:icon="@drawable/logo_renren_icon_58"
+            android:title="@string/platform_renren"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

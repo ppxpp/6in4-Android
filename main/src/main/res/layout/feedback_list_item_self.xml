@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="40dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <cn.edu.bupt.niclab.account.CircleImageView
+        android:id="@+id/head"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_account_mything"
+        android:layout_marginRight="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <RelativeLayout
+        android:layout_toLeftOf="@id/head"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/dialog_mine_bg_right_normal"
+        android:layout_width="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/content"
+            android:text="llll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_below="@id/content"
+            android:layout_marginTop="5dp"
+            android:textSize="10sp"
+            android:gravity="right"
+            android:maxLines="1"
+            android:text="2012-12-12 12:22:22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
