@@ -59,6 +59,7 @@
         android:layout_height="match_parent"/>
     <TextView
         android:id="@+id/hint"
+        android:visibility="gone"
         android:text="hhhhh"
         android:background="@drawable/hint_bg"
         android:textColor="#fff"

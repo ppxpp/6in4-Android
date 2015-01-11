@@ -18,4 +18,6 @@
     <string name="umeng_fb_send">发送</string>
     <string name="umeng_fb_title">用户反馈</string>
 
+    <string name="check_ipv6_connection">检查IPv6连接</string>
+
 </resources>

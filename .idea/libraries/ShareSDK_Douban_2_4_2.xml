@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ShareSDK-Douban-2.4.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/main/libs/ShareSDK-Douban-2.4.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -80,7 +80,7 @@ public class FeedbackActivity extends BaseActivity {
         mHintTV = (TextView) findViewById(R.id.hint);
         agent = new FeedbackAgent(this);
         defaultConversation = agent.getDefaultConversation();
-        if (defaultConversation.getReplyList().size() == 0){
+        /*if (defaultConversation.getReplyList().size() == 0){
             mHintTV.setVisibility(View.VISIBLE);
             inAnimation.setDuration(1000);
             mHintTV.startAnimation(inAnimation);
@@ -109,7 +109,7 @@ public class FeedbackActivity extends BaseActivity {
             }, 6000);
         }else{
             mHintTV.setVisibility(View.GONE);
-        }
+        }*/
         mAdatper = new ReplyListAadatper();
         sync();
 

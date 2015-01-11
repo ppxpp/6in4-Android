@@ -82,7 +82,7 @@ public class GeneralSettings extends BasePreferenceFragment implements OnPrefere
     private final int REQUEST_CODE_LOGIN = 14;
     private final int REQUEST_CODE_LAUNCH_VPN = 15;
     private ProgressDialog mPD;
-    private PreferenceCategory mOtherPFC;
+    private PreferenceCategory mVPNPFC;
     private Preference mLogoutPF;
 
 	@Override
@@ -140,7 +140,7 @@ public class GeneralSettings extends BasePreferenceFragment implements OnPrefere
 
         mLogoutPF = findPreference("logout");
         mLogoutPF.setOnPreferenceClickListener(this);
-        mOtherPFC = (PreferenceCategory) findPreference("app_other");
+        mVPNPFC = (PreferenceCategory) findPreference("app_vpn");
 	}
 
     @Override
@@ -175,11 +175,11 @@ public class GeneralSettings extends BasePreferenceFragment implements OnPrefere
 
     private void updateLogoutPreference(){
         Account account = AccountManager.getManager().getCurtAccount();
-        Log.d(tag, "account = " + account +", mOtherPFC.getPreferenceCount()"+ mOtherPFC.getPreferenceCount());
-        if (account == null && mOtherPFC.getPreferenceCount() == 3){
-            mOtherPFC.removePreference(mLogoutPF);
-        }else if(account != null && mOtherPFC.getPreferenceCount() == 2){
-            mOtherPFC.addPreference(mLogoutPF);
+        Log.d(tag, "account = " + account +", mOtherPFC.getPreferenceCount()"+ mVPNPFC.getPreferenceCount());
+        if (account == null/* && mVPNPFC.getPreferenceCount() == 3*/){
+            mVPNPFC.removePreference(mLogoutPF);
+        }else if(account != null /*&& mVPNPFC.getPreferenceCount() == 2*/){
+            mVPNPFC.addPreference(mLogoutPF);
         }
     }
 

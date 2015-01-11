@@ -367,20 +367,17 @@
     <string name="feed_back">Feedback</string>
     <string name="setting_share">Share</string>
     <string name="setting_logout_account">Logout Current Account</string>
+    <string name="check_ipv6_connection">Check IPv6 Connection</string>
     <string name="logout_success">Logout Success</string>
     <string name="source_licence">Licence</string>
     <string name="title_activity_update">UpdateActivity</string>
     <string name="hello_world">Hello world!</string>
-
     <string name="switch_to_res_title">Auto Navigate</string>
     <string name="switch_to_res_summary">Navigate to Resource Page after VPN connection established</string>
-
     <string name="action_settings">Settings</string>
     <string name="title_activity_base">BaseActivity</string>
     <string name="title_activity_feedback">Feedback</string>
     <string name="title_activity_shareapp">Share App</string>
-
-
     <string name="select_platform">Select Platform</string>
     <string name="platform_qq">QQ</string>
     <string name="platform_sinaweibo">Sina Weibo</string>
@@ -389,20 +386,18 @@
     <string name="platform_weixin">WeChat</string>
     <string name="platform_douban">Douban</string>
     <string name="platform_renren">RenRen</string>
-
     <string name="send_log_file">Send Log Info</string>
-
     <string name="share_selector_title">Select An APP to Share</string>
     <string name="share_finish">share success</string>
-    <!--<string name="share_failed">share failed</string>-->
+    <!-- <string name="share_failed">share failed</string> -->
     <string name="share_cancel">share canceled</string>
     <string name="share_title">this is share title</string>
     <string name="share_title_url">http://www.6able.com</string>
     <string name="share_text">I\'m using 6in4 to visit IPv6 Resources. It\'s very cool. Download here: http://www.6able.com</string>
     <string name="share_site">6in4</string>
     <string name="share_url">http://www.6able.com</string>
-
     <string name="logout_confirm_message">Sure to Logout? Connection will lost.</string>
     <string name="logout">Logout</string>
+    <string name="title_activity_check_ipv6_connection">CheckIPv6ConnectionActivity</string>
 
 </resources>

@@ -1,115 +1,119 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (c) 2012-2014 Arne Schwabe
   ~ Distributed under the GNU GPL v2. For full terms see the file doc/LICENSE.txt
   -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="@string/appvpn" android:key="app_vpn">
+    <PreferenceCategory
+        android:key="app_vpn"
+        android:title="@string/appvpn">
         <Preference
             android:key="vpn"
             android:persistent="false"
             android:summary="@string/app_vpn_connect_sumary"
-            android:title="@string/app_vpn_connect_title"/>
+            android:title="@string/app_vpn_connect_title" />
         <Preference
             android:key="log"
             android:persistent="false"
-            android:title="@string/app_show_log_title"/>
-    </PreferenceCategory>
-
-    <!--<PreferenceCategory android:title="@string/appacount" android:key="app_account">
-        <Preference
-            android:key="account"
-            android:persistent="false"
-            android:summary="@string/app_account_not_login_sumary"
-            android:title="@string/app_account_not_login_title"/>
-    </PreferenceCategory>-->
-
-    <PreferenceCategory android:title="@string/appbehaviour" android:key="app_behaviour">
-        <CheckBoxPreference
-            android:defaultValue="true"
-            android:key="switch_to_res"
-            android:summary="@string/switch_to_res_summary"
-            android:title="@string/switch_to_res_title"/>
-
-        <CheckBoxPreference
-                android:defaultValue="false"
-                android:key="showlogwindow"
-                android:summary="@string/show_log_summary"
-                android:title="@string/show_log_window"/>
-
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="ovpn3"
-            android:summaryOn="Use the C++ OpenVPN library"
-            android:summaryOff="Use OpenVPN 2.3"
-            android:title="OpenVPN 3 Core"/>
-
-
-        <CheckBoxPreference
-                android:defaultValue="false"
-                android:key="restartvpnonboot"
-                android:summary="@string/onbootrestartsummary"
-                android:title="@string/onbootrestart"/>
-
-        <!--<Preference
-                android:key="clearapi"
-                android:persistent="false"
-                android:title="@string/clear_external_apps"/>-->
-    </PreferenceCategory>
-
-    <PreferenceCategory android:title="@string/vpnbehaviour">
-        <!--<CheckBoxPreference
-                android:defaultValue="true"
-                android:key="usesystemproxy"
-                android:summary="@string/use_system_proxy_summary"
-                android:title="@string/use_system_proxy"/>-->
-        <CheckBoxPreference
-                android:defaultValue="true"
-                android:key="netchangereconnect"
-                android:summary="@string/netchange_summary"
-                android:title="@string/netchange"/>
-
-
-        <CheckBoxPreference
-                android:defaultValue="false"
-                android:key="screenoff"
-                android:summary="@string/screenoff_summary"
-                android:title="@string/screenoff_title"/>
-
-    </PreferenceCategory>
-
-    <PreferenceCategory android:title="@string/device_specific" android:key="device_hacks">
-        <CheckBoxPreference
-                android:defaultValue="false"
-                android:key="useCM9Fix"
-                android:summary="@string/owner_fix_summary"
-                android:title="@string/owner_fix"/>
-        <CheckBoxPreference
-                android:defaultValue="false"
-                android:key="loadTunModule"
-                android:summary="@string/setting_loadtun_summary"
-                android:title="@string/setting_loadtun"/>
-    </PreferenceCategory>
-
-    <PreferenceCategory android:title="@string/appother" android:key="app_other">
-        <Preference
-            android:defaultValue="false"
-            android:key="update"
-            android:title="@string/version_update"/>
-        <Preference
-            android:defaultValue="false"
-            android:key="feedback"
-            android:title="@string/feed_back"/>
-        <!--<Preference
-            android:defaultValue="false"
-            android:key="share"
-            android:title="@string/setting_share"/>-->
+            android:title="@string/app_show_log_title" />
         <Preference
             android:defaultValue="false"
             android:key="logout"
-            android:title="@string/setting_logout_account"/>
+            android:title="@string/setting_logout_account" />
+
+
+        <!-- IPv6 connection check -->
+        <Preference
+            android:title="@string/check_ipv6_connection" >
+            <intent
+                android:targetPackage="cn.edu.bupt.niclab"
+                android:targetClass="cn.edu.bupt.niclab.activities.CheckIPv6ConnectionActivity"/>
+        </Preference>
+
+        <!-- opens another nested subscreen -->
+        <PreferenceScreen
+            android:key="advance_setting"
+            android:persistent="false"
+            android:title="@string/advanced">
+            <PreferenceCategory
+                android:key="app_behaviour"
+                android:title="@string/appbehaviour">
+                <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="switch_to_res"
+                    android:summary="@string/switch_to_res_summary"
+                    android:title="@string/switch_to_res_title" />
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="showlogwindow"
+                    android:summary="@string/show_log_summary"
+                    android:title="@string/show_log_window" />
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="ovpn3"
+                    android:summaryOff="Use OpenVPN 2.3"
+                    android:summaryOn="Use the C++ OpenVPN library"
+                    android:title="OpenVPN 3 Core" />
+
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="restartvpnonboot"
+                    android:summary="@string/onbootrestartsummary"
+                    android:title="@string/onbootrestart" />
+
+            </PreferenceCategory>
+
+            <PreferenceCategory android:title="@string/vpnbehaviour">
+                <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="netchangereconnect"
+                    android:summary="@string/netchange_summary"
+                    android:title="@string/netchange" />
+
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="screenoff"
+                    android:summary="@string/screenoff_summary"
+                    android:title="@string/screenoff_title" />
+
+            </PreferenceCategory>
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="device_hacks"
+        android:title="@string/device_specific">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="useCM9Fix"
+            android:summary="@string/owner_fix_summary"
+            android:title="@string/owner_fix" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="loadTunModule"
+            android:summary="@string/setting_loadtun_summary"
+            android:title="@string/setting_loadtun" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="app_other"
+        android:title="@string/appother">
+        <Preference
+            android:defaultValue="false"
+            android:key="update"
+            android:title="@string/version_update" />
+        <Preference
+            android:defaultValue="false"
+            android:key="feedback"
+            android:title="@string/feed_back" />
     </PreferenceCategory>
 
 </PreferenceScreen>
