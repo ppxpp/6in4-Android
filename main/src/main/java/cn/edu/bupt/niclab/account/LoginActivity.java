@@ -157,7 +157,7 @@ public class LoginActivity extends BaseActivity implements PlatformActionListene
         return super.onOptionsItemSelected(item);
     }
 
-    private void debug(String msg){
+    /*private void debug(String msg){
         Log.d(tag, msg);
-    }
+    }*/
 }

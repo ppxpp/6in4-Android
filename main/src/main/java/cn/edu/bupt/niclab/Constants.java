@@ -17,6 +17,8 @@ public class Constants {
     public static final String URL_ACCOUNT_CHECK = "http://"+SERVER_IP+"/account/check";
     //IPv6资源页面
     public static final String URL_IPv6_RESOURCE = "http://"+SERVER_IP+"/res";
+    //默认的用于检测ping6的参数
+    public static final String URL_IPv6_HOST_FOR_TEST = "bt.byr.cn";
     //记录设备信息的url
     public static final String URL_RECORD_DEVICE = "http://"+SERVER_IP +"/record/device";
     //记录设备连接日志的url
@@ -43,6 +45,7 @@ public class Constants {
     public static final String PARAM_KEY_SHARE_TEXT = "share_text";
     public static final String PARAM_KEY_SHARE_SITE = "share_site";
     public static final String PARAM_KEY_SHARE_URL = "share_url";
+    public static final String PARAM_KEY_IPV6_HOST_FOR_TEST = "ipv6_host_for_test";
 
 
     //public static final boolean USE_RSA = true;

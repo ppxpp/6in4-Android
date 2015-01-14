@@ -349,6 +349,7 @@
 
     <!-- hack -->
     <string name="title_resource">IPv6 Resource</string>
+    <string name="title_app">APP</string>
     <string name="title_share">Share</string>
     <string name="action_connect">connect VPN</string>
     <string name="action_disconnect">disconnect</string>
@@ -367,7 +368,7 @@
     <string name="feed_back">Feedback</string>
     <string name="setting_share">Share</string>
     <string name="setting_logout_account">Logout Current Account</string>
-    <string name="check_ipv6_connection">Check IPv6 Connection</string>
+    <string name="check_ipv6_connection">IPv6 Diagnosing</string>
     <string name="logout_success">Logout Success</string>
     <string name="source_licence">Licence</string>
     <string name="title_activity_update">UpdateActivity</string>
@@ -398,6 +399,17 @@
     <string name="share_url">http://www.6able.com</string>
     <string name="logout_confirm_message">Sure to Logout? Connection will lost.</string>
     <string name="logout">Logout</string>
-    <string name="title_activity_check_ipv6_connection">CheckIPv6ConnectionActivity</string>
+    <string name="title_activity_check_ipv6_connection">IPv6 Diagnose</string>
+
+    <!-- IPv6连接检测 -->
+    <string name="start_diagnosing">Start Diagnosing</string>
+    <string name="diagnosing">Diagnosing ...</string>
+    <string name="diagnose_feedback">Send result to us</string>
+    <string name="diagnosing_title">IPv6 Diagnosing can diagnose IPv6 connection of your device. We will not get your private message.</string>
+    <string name="diagnosing_items">Diagnosing will check following items:</string>
+    <string name="diagnosing_1">1. Get Local IP</string>
+    <string name="diagnosing_2">2. Get DNS Server</string>
+    <string name="diagnosing_3">3. Ping Server</string>
+    <string name="diagnosing_3_1">http://bt.byr.cn</string>
 
 </resources>

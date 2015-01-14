@@ -50,7 +50,7 @@ public class ResourceFragment extends BaseFragment {
             SharedPreferences sp = getActivity().getSharedPreferences(Constants.SHARED_PREFERENCE_NAME, getActivity().MODE_PRIVATE);
             long last_load_time = sp.getLong("load_time", -1);
             long curt_time = System.currentTimeMillis();
-            long out_of_date = 1000 * 60 * 60 * 5;//5 hours
+            long out_of_date = 1000 * 60 * 60 * 10;//10 hours
             if (last_load_time == -1 || curt_time - last_load_time >= out_of_date){
                 mWebView.clearCache(true);
                 SharedPreferences.Editor editor = sp.edit();
@@ -70,7 +70,7 @@ public class ResourceFragment extends BaseFragment {
                 url = Constants.URL_IPv6_RESOURCE;
                 Log.d(tag, "get res url faild, set url to " + url);
             }
-            url = "http://6able.com/nav.html";
+            //url = "http://6able.com/nav.html";
             mWebView.loadUrl(url);
             Log.d(tag, "onCreateView, this = " + this);
             contentRef = new WeakReference<View>(view);
