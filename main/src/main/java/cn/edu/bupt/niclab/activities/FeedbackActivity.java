@@ -113,6 +113,12 @@ public class FeedbackActivity extends BaseActivity {
         mAdatper = new ReplyListAadatper();
         sync();
 
+        Intent intent = getIntent();
+        String content = intent.getStringExtra("content");
+        if (content != null){
+            mEditText.setText(content);
+        }
+
     }
 
     @Override

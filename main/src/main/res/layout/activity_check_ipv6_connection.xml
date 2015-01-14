@@ -4,9 +4,104 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#f8f8f8"
     tools:context="cn.edu.bupt.niclab.activities.CheckIPv6ConnectionActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+
+    <Button
+        android:id="@+id/start_btn"
+        android:onClick="startDiagnose"
+        android:background="@drawable/disgnose_btn_bg"
+        android:text="@string/start_diagnosing"
+        android:textColor="@drawable/disgnose_btn_text_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="@string/diagnosing_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/diagnosing_items"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_below="@id/title"
+        android:layout_above="@+id/start_btn"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/diagnose_frame_bg"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/itemlist"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/item1"
+                android:clickable="true"
+                android:paddingLeft="20dp"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="@string/diagnosing_1"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="#a1a1a1"
+                android:layout_height="0.5dp"
+                android:layout_width="match_parent"/>
+            <TextView
+                android:id="@+id/item2"
+                android:clickable="true"
+                android:paddingLeft="20dp"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="@string/diagnosing_2"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="#a1a1a1"
+                android:layout_height="0.5dp"
+                android:layout_width="match_parent"/>
+            <TextView
+                android:id="@+id/item3"
+                android:clickable="true"
+                android:paddingLeft="20dp"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="@string/diagnosing_3"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/result_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/result"
+                android:padding="10dp"
+                android:gravity="bottom"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </FrameLayout>
+
 
 </RelativeLayout>

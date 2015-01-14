@@ -316,6 +316,7 @@
 
     <!-- hack -->
     <string name="title_resource">IPv6资源</string>
+    <string name="title_app">应用</string>
     <string name="title_share">分享</string>
     <string name="action_connect">连接VPN</string>
     <string name="action_disconnect">断开连接</string>
@@ -376,5 +377,17 @@
     <string name="logout_success">退出成功</string>
     <string name="logout_confirm_message">是否退出此账号?退出账号后，当前连接也会断开!</string>
     <string name="logout">退出</string>
+
+
+    <!-- IPv6连接检测 -->
+    <string name="title_activity_check_ipv6_connection">IPv6诊断</string>
+    <string name="start_diagnosing">开始诊断</string>
+    <string name="diagnosing">正在诊断...</string>
+    <string name="diagnose_feedback">反馈诊断结果</string>
+    <string name="diagnosing_title">IPv6诊断可以检测设备的IPv6网络连接是否正确，反馈诊断结果可以帮助我们解决问题。</string>
+    <string name="diagnosing_items">诊断内容：</string>
+    <string name="diagnosing_1">1. 获取本地IPv6地址</string>
+    <string name="diagnosing_2">2. 检查DNS设置</string>
+    <string name="diagnosing_3">3. 检查外网是否可达</string>
 
 </resources>
