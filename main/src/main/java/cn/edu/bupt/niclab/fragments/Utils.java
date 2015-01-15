@@ -8,6 +8,7 @@ package cn.edu.bupt.niclab.fragments;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.database.Cursor;
@@ -28,6 +29,19 @@ import cn.edu.bupt.niclab.VpnProfile;
 
 public class Utils {
 
+    
+    public static boolean checkInstallAPP(Context context, String packageName){
+
+        final PackageManager packageManager = context.getPackageManager();
+        // 获取所有已安装程序的包信息
+        List<PackageInfo> pinfo = packageManager.getInstalledPackages(0);
+        for ( int i = 0; i < pinfo.size(); i++ )
+        {
+            if(pinfo.get(i).packageName.equalsIgnoreCase(packageName))
+                return true;
+        }
+        return false;
+    }
 
     @TargetApi(Build.VERSION_CODES.KITKAT)
     public static Intent getFilePickerIntent(Context c, FileType fileType) {
@@ -243,5 +257,17 @@ public class Utils {
         }
 
         return prefix + VpnProfile.INLINE_TAG + newData;
+    }
+
+    public static String getReadableSize(int sizeInKB){
+        if (sizeInKB < 1000){
+            return sizeInKB + "KB";
+        }
+        double sizeKB = sizeInKB;
+        double sizeMB = sizeKB / 1024;
+        if (sizeMB < 1000){
+            return String.format("%1$,.2fMB", sizeMB);
+        }
+        return sizeInKB + "KB";
     }
 }

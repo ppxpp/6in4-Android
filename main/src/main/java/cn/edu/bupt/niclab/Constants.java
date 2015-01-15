@@ -23,7 +23,10 @@ public class Constants {
     public static final String URL_RECORD_DEVICE = "http://"+SERVER_IP +"/record/device";
     //记录设备连接日志的url
     public static final String URL_RECORD_CONNECT_LOG = "http://" + SERVER_IP + "/record/connectlog";
-    //
+    //获取APP列表接口
+    public static final String URL_APP_RESOURCE = "http://" + SERVER_IP + "/app/list";
+    
+    
     public static final int SHARE_TITLE_RESID = R.string.share_title;
     //
     public static final int SHARE_TITLE_URL_RESID = R.string.share_title;
@@ -37,6 +40,7 @@ public class Constants {
     //需与友盟后台填写的key一致
     public static final String PARAM_KEY_ACCOUNT_CHECK = "url_account_check";
     public  static final String PARAM_KEY_IPV6_RESOURCE = "url_ipv6_resource";
+    public  static final String PARAM_KEY_APP_RESOURCE = "url_app_resource";
     public static final String PARAM_KEY_RECORD_DEVICE = "url_record_device";
     public static final String PARAM_KEY_RECORD_CONNECT_LOG = "url_record_connect_log";
     public static final String PARAM_KEY_USE_RSA = "use_rsa";

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/app_item_bg"
+    android:clickable="true"
+    android:layout_width="match_parent" android:layout_height="90dp">
+    <ImageView
+        android:id="@+id/icon"
+        android:src="@drawable/icon_default"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <TextView
+        android:id="@+id/name"
+        android:text="QQ"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/icon"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/label"
+        android:text="@string/app_label"
+        android:textSize="16sp"
+        android:layout_below="@id/name"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/icon"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ccc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:id="@+id/install_btn"
+        android:text="@string/install"
+        android:textColor="#fff"
+        android:minWidth="1dp"
+        android:textSize="15sp"
+        android:minHeight="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/app_item_install_btn_bg"
+        android:layout_width="85dp"
+        android:layout_height="40dp" />
+</RelativeLayout>

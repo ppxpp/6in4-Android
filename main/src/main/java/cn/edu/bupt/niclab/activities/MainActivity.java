@@ -101,13 +101,15 @@ public class MainActivity extends BaseActivity {
                 mFragment = Fragment.instantiate(MainActivity.this, mClass.getName());
                 ft.add(android.R.id.content, mFragment, mTag);
             } else {
-                ft.attach(mFragment);
+                //ft.attach(mFragment);
+                ft.show(mFragment);
             }
         }
 
         public void onTabUnselected(Tab tab, FragmentTransaction ft) {
             if (mFragment != null) {
-                ft.detach(mFragment);
+                //ft.detach(mFragment);
+                ft.hide(mFragment);
             }
         }
 

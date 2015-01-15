@@ -411,5 +411,11 @@
     <string name="diagnosing_2">2. Get DNS Server</string>
     <string name="diagnosing_3">3. Ping Server</string>
     <string name="diagnosing_3_1">http://bt.byr.cn</string>
+    
+    <!-- APP下载页面 -->
+    <string name="app_label">%1$s download   %2$s</string>
+    <string name="loading">Loading</string>
+    <string name="install">Install</string>
+    <string name="launch">Launch</string>
 
 </resources>
