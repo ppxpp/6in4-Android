@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/app_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent" android:layout_height="80dp">
+    <ImageView
+        android:id="@+id/icon"
+        android:focusable="false"
+        android:src="@drawable/icon_default"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+    <TextView
+        android:id="@+id/name"
+        android:text="QQ"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/icon"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/label"
+        android:text="@string/app_label"
+        android:textSize="16sp"
+        android:layout_below="@id/name"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/icon"
+        android:layout_marginLeft="10dp"
+        android:textColor="#353535"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/install_btn"
+        android:text="@string/state_pause"
+        android:textColor="#fff"
+        android:minWidth="1dp"
+        android:textSize="17sp"
+        android:minHeight="1dp"
+        android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/app_item_install_btn_bg"
+        android:layout_width="85dp"
+        android:layout_height="40dp" />
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/number_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/label"
+        android:layout_toRightOf="@id/icon"
+        android:layout_toLeftOf="@id/install_btn"
+        style="@style/NumberProgressBar_Default"
+        />
+
+    
+    
+    
+</RelativeLayout>

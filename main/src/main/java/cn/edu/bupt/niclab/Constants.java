@@ -1,10 +1,17 @@
 package cn.edu.bupt.niclab;
 
+import java.io.File;
+
 /**
  * Created by ppxpp on 2014/10/11.
  */
 public class Constants {
 
+    //在SD卡上创建的目录名称
+    public static final String ExternalDir = "6in4";
+    //APP安装包存放路径
+    public static final String APKDir = ExternalDir + File.separator + "apk";
+    
     //name of SharedPreference
     public static final String SHARED_PREFERENCE_NAME = "6in4sp";
     //key of last user id

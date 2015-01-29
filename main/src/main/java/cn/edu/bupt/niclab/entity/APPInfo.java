@@ -1,9 +1,11 @@
 package cn.edu.bupt.niclab.entity;
 
+import java.io.Serializable;
+
 /**
  * Created by zhengmeng on 2015/1/14.
  */
-public class APPInfo {
+public class APPInfo implements Serializable {
     
     private int id;
     private String name;

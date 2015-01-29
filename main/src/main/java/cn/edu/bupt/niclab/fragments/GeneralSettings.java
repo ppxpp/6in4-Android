@@ -32,6 +32,7 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceManager;
+import android.preference.PreferenceScreen;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
@@ -82,7 +83,8 @@ public class GeneralSettings extends BasePreferenceFragment implements OnPrefere
     private final int REQUEST_CODE_LOGIN = 14;
     private final int REQUEST_CODE_LAUNCH_VPN = 15;
     private ProgressDialog mPD;
-    private PreferenceCategory mVPNPFC;
+    private PreferenceScreen mPScreen;
+    //private PreferenceCategory mVPNPFC;
     private Preference mLogoutPF;
 
 	@Override
@@ -90,7 +92,10 @@ public class GeneralSettings extends BasePreferenceFragment implements OnPrefere
 		super.onCreate(savedInstanceState);
 		// Load the preferences from an XML resource
 		addPreferencesFromResource(R.xml.general_settings);
-        PreferenceCategory devHacks = (PreferenceCategory) findPreference("device_hacks");
+        
+        mPScreen = (PreferenceScreen) findPreference("screen");
+        
+        /*PreferenceCategory devHacks = (PreferenceCategory) findPreference("device_hacks");
         Preference loadtun = findPreference("loadTunModule");
 		if(!isTunModuleAvailable()) {
 			loadtun.setEnabled(false);
@@ -101,11 +106,14 @@ public class GeneralSettings extends BasePreferenceFragment implements OnPrefere
         if (!cm9hack.isChecked() && (Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN_MR1)) {
             devHacks.removePreference(cm9hack);
         }
+        
+        if(devHacks.getPreferenceCount()==0)
+            getPreferenceScreen().removePreference(devHacks);
+        */
 
 		mExtapp = new ExternalAppDatabase(getActivity());
 
-        if(devHacks.getPreferenceCount()==0)
-            getPreferenceScreen().removePreference(devHacks);
+        
 
         if (!"ovpn3".equals(BuildConfig.FLAVOR)) {
             PreferenceCategory appBehaviour = (PreferenceCategory) findPreference("app_behaviour");
@@ -140,7 +148,7 @@ public class GeneralSettings extends BasePreferenceFragment implements OnPrefere
 
         mLogoutPF = findPreference("logout");
         mLogoutPF.setOnPreferenceClickListener(this);
-        mVPNPFC = (PreferenceCategory) findPreference("app_vpn");
+        //mVPNPFC = (PreferenceCategory) findPreference("app_vpn");
 	}
 
     @Override
@@ -175,11 +183,13 @@ public class GeneralSettings extends BasePreferenceFragment implements OnPrefere
 
     private void updateLogoutPreference(){
         Account account = AccountManager.getManager().getCurtAccount();
-        Log.d(tag, "account = " + account +", mOtherPFC.getPreferenceCount()"+ mVPNPFC.getPreferenceCount());
+        //Log.d(tag, "account = " + account +", mOtherPFC.getPreferenceCount()"+ mVPNPFC.getPreferenceCount());
         if (account == null/* && mVPNPFC.getPreferenceCount() == 3*/){
-            mVPNPFC.removePreference(mLogoutPF);
+            //mVPNPFC.removePreference(mLogoutPF);
+            mPScreen.removePreference(mLogoutPF);
         }else if(account != null /*&& mVPNPFC.getPreferenceCount() == 2*/){
-            mVPNPFC.addPreference(mLogoutPF);
+            //mVPNPFC.addPreference(mLogoutPF);
+            mPScreen.addPreference(mLogoutPF);
         }
     }
 
@@ -207,7 +217,9 @@ public class GeneralSettings extends BasePreferenceFragment implements OnPrefere
                 mPD.dismiss();
                 mPD = null;
             }
-            pf.setTitle(R.string.app_vpn_connect_title);
+            String userName = AccountManager.getManager().getCurtAccount().userName;
+            pf.setTitle(String.format(getString(R.string.app_vpn_connect_title), userName));
+            //pf.setTitle(R.string.app_vpn_connect_title);
             pf.setSummary(R.string.app_vpn_connect_sumary);
         }else{
             pf.setTitle(R.string.app_vpn_not_connect_title);

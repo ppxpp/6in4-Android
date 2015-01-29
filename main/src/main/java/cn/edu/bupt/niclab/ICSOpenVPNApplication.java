@@ -20,6 +20,7 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.utils.StorageUtils;
 
 import cn.edu.bupt.niclab.account.AccountManager;
+import cn.edu.bupt.niclab.app.APPDataProvider;
 import de.blinkt.openvpn.core.PRNGFixes;
 
 /*
@@ -52,7 +53,7 @@ public class ICSOpenVPNApplication extends Application {
                 .diskCache(new UnlimitedDiscCache(StorageUtils.getCacheDirectory(this)))
                 .build();
         ImageLoader.getInstance().init(cfg);
-
+        APPDataProvider.init(this);
         AccountManager.getManager().loadAccount(this);
         if (BuildConfig.DEBUG) {
             //ACRA.init(this);

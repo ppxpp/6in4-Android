@@ -1,356 +1,387 @@
 -- Merging decision tree log ---
 manifest
-ADDED from AndroidManifest.xml:8:1
+ADDED from AndroidManifest.xml:7:1
 	xmlns:tools
-		ADDED from AndroidManifest.xml:9:5
+		ADDED from AndroidManifest.xml:8:5
 	xmlns:android
-		ADDED from AndroidManifest.xml:8:11
+		ADDED from AndroidManifest.xml:7:11
 	package
-		ADDED from AndroidManifest.xml:10:5
+		ADDED from AndroidManifest.xml:9:5
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
 	android:versionName
-		ADDED from AndroidManifest.xml:12:5
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
-	android:versionCode
 		ADDED from AndroidManifest.xml:11:5
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
+	android:versionCode
+		ADDED from AndroidManifest.xml:10:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
 uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:13:5
+	android:name
+		ADDED from AndroidManifest.xml:13:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from AndroidManifest.xml:14:5
 	android:name
 		ADDED from AndroidManifest.xml:14:22
-uses-permission#android.permission.ACCESS_NETWORK_STATE
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from AndroidManifest.xml:15:5
 	android:name
 		ADDED from AndroidManifest.xml:15:22
-uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from AndroidManifest.xml:16:5
 	android:name
 		ADDED from AndroidManifest.xml:16:22
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from AndroidManifest.xml:17:5
-	android:name
-		ADDED from AndroidManifest.xml:17:22
 uses-permission#android.permission.GET_TASKS
-ADDED from AndroidManifest.xml:19:5
+ADDED from AndroidManifest.xml:18:5
 	android:name
-		ADDED from AndroidManifest.xml:19:22
+		ADDED from AndroidManifest.xml:18:22
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from AndroidManifest.xml:21:5
+ADDED from AndroidManifest.xml:20:5
 	android:name
-		ADDED from AndroidManifest.xml:21:22
+		ADDED from AndroidManifest.xml:20:22
 uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from AndroidManifest.xml:22:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from AndroidManifest.xml:23:5
 	android:name
 		ADDED from AndroidManifest.xml:23:22
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+uses-permission#android.permission.READ_PHONE_STATE
 ADDED from AndroidManifest.xml:24:5
 	android:name
 		ADDED from AndroidManifest.xml:24:22
-uses-permission#android.permission.READ_PHONE_STATE
+uses-permission#android.permission.MANAGE_ACCOUNTS
 ADDED from AndroidManifest.xml:25:5
 	android:name
 		ADDED from AndroidManifest.xml:25:22
-uses-permission#android.permission.MANAGE_ACCOUNTS
+uses-permission#android.permission.GET_ACCOUNTS
 ADDED from AndroidManifest.xml:26:5
 	android:name
 		ADDED from AndroidManifest.xml:26:22
-uses-permission#android.permission.GET_ACCOUNTS
-ADDED from AndroidManifest.xml:27:5
-	android:name
-		ADDED from AndroidManifest.xml:27:22
 permission#de.blinkt.openvpn.REMOTE_API
-ADDED from AndroidManifest.xml:39:5
+ADDED from AndroidManifest.xml:38:5
 	android:label
-		ADDED from AndroidManifest.xml:42:9
-	android:protectionLevel
-		ADDED from AndroidManifest.xml:44:9
-	android:description
 		ADDED from AndroidManifest.xml:41:9
-	android:permissionGroup
+	android:protectionLevel
 		ADDED from AndroidManifest.xml:43:9
-	android:name
+	android:description
 		ADDED from AndroidManifest.xml:40:9
+	android:permissionGroup
+		ADDED from AndroidManifest.xml:42:9
+	android:name
+		ADDED from AndroidManifest.xml:39:9
 application
-ADDED from AndroidManifest.xml:46:5
-MERGED from com.android.support:support-v4:20.0.0:17:5
+ADDED from AndroidManifest.xml:45:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.ms-square:expandableTextView:0.1.3:9:5
+MERGED from com.android.support:support-v13:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
 	android:supportsRtl
-		ADDED from AndroidManifest.xml:51:9
-	android:label
 		ADDED from AndroidManifest.xml:50:9
-	android:allowBackup
-		ADDED from AndroidManifest.xml:48:9
-	android:icon
-		ADDED from AndroidManifest.xml:49:9
-	android:theme
-		ADDED from AndroidManifest.xml:52:9
-	android:name
-		ADDED from AndroidManifest.xml:47:9
-	tools:ignore
-		ADDED from AndroidManifest.xml:53:9
-meta-data#UMENG_APPKEY
-ADDED from AndroidManifest.xml:56:9
-	android:name
-		ADDED from AndroidManifest.xml:57:13
-	android:value
-		ADDED from AndroidManifest.xml:58:13
-meta-data#UMENG_CHANNEL
-ADDED from AndroidManifest.xml:69:9
-	android:name
-		ADDED from AndroidManifest.xml:70:13
-	android:value
-		ADDED from AndroidManifest.xml:71:13
-activity#com.umeng.fb.ConversationActivity
-ADDED from AndroidManifest.xml:73:9
-	android:theme
-		ADDED from AndroidManifest.xml:75:13
-	android:name
-		ADDED from AndroidManifest.xml:74:13
-activity#com.umeng.fb.ContactActivity
-ADDED from AndroidManifest.xml:76:9
-	android:theme
-		ADDED from AndroidManifest.xml:78:13
-	android:name
-		ADDED from AndroidManifest.xml:77:13
-activity#cn.edu.bupt.niclab.activities.VPNPreferences
-ADDED from AndroidManifest.xml:81:9
-	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:84:13
-	android:exported
-		ADDED from AndroidManifest.xml:83:13
-	android:name
-		ADDED from AndroidManifest.xml:82:13
-activity#cn.edu.bupt.niclab.activities.DisconnectVPN
-ADDED from AndroidManifest.xml:85:9
-	android:theme
-		ADDED from AndroidManifest.xml:87:13
-	android:name
-		ADDED from AndroidManifest.xml:86:13
-activity#cn.edu.bupt.niclab.activities.LogWindow
-ADDED from AndroidManifest.xml:88:9
 	android:label
-		ADDED from AndroidManifest.xml:91:13
-	android:allowTaskReparenting
-		ADDED from AndroidManifest.xml:90:13
+		ADDED from AndroidManifest.xml:49:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:47:9
+	android:icon
+		ADDED from AndroidManifest.xml:48:9
+	android:theme
+		ADDED from AndroidManifest.xml:51:9
 	android:name
-		ADDED from AndroidManifest.xml:89:13
-	android:launchMode
-		ADDED from AndroidManifest.xml:92:13
-activity#cn.edu.bupt.niclab.activities.FileSelect
-ADDED from AndroidManifest.xml:93:9
-	android:name
-		ADDED from AndroidManifest.xml:93:19
-activity#cn.edu.bupt.niclab.activities.MainActivity
-ADDED from AndroidManifest.xml:94:9
-	android:uiOptions
-		ADDED from AndroidManifest.xml:97:13
-	android:name
-		ADDED from AndroidManifest.xml:95:13
-	android:launchMode
-		ADDED from AndroidManifest.xml:96:13
+		ADDED from AndroidManifest.xml:46:9
 	tools:ignore
-		ADDED from AndroidManifest.xml:98:13
-intent-filter#android.intent.action.MAIN+android.intent.category.BROWSABLE+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:99:13
-action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:100:17
+		ADDED from AndroidManifest.xml:52:9
+meta-data#UMENG_APPKEY
+ADDED from AndroidManifest.xml:55:9
 	android:name
-		ADDED from AndroidManifest.xml:100:25
+		ADDED from AndroidManifest.xml:56:13
+	android:value
+		ADDED from AndroidManifest.xml:57:13
+meta-data#UMENG_CHANNEL
+ADDED from AndroidManifest.xml:68:9
+	android:name
+		ADDED from AndroidManifest.xml:69:13
+	android:value
+		ADDED from AndroidManifest.xml:70:13
+activity#com.umeng.fb.ConversationActivity
+ADDED from AndroidManifest.xml:72:9
+	android:theme
+		ADDED from AndroidManifest.xml:74:13
+	android:name
+		ADDED from AndroidManifest.xml:73:13
+activity#com.umeng.fb.ContactActivity
+ADDED from AndroidManifest.xml:75:9
+	android:theme
+		ADDED from AndroidManifest.xml:77:13
+	android:name
+		ADDED from AndroidManifest.xml:76:13
+activity#cn.edu.bupt.niclab.activities.VPNPreferences
+ADDED from AndroidManifest.xml:80:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:83:13
+	android:exported
+		ADDED from AndroidManifest.xml:82:13
+	android:name
+		ADDED from AndroidManifest.xml:81:13
+activity#cn.edu.bupt.niclab.activities.DisconnectVPN
+ADDED from AndroidManifest.xml:84:9
+	android:theme
+		ADDED from AndroidManifest.xml:86:13
+	android:name
+		ADDED from AndroidManifest.xml:85:13
+activity#cn.edu.bupt.niclab.activities.LogWindow
+ADDED from AndroidManifest.xml:87:9
+	android:label
+		ADDED from AndroidManifest.xml:90:13
+	android:allowTaskReparenting
+		ADDED from AndroidManifest.xml:89:13
+	android:name
+		ADDED from AndroidManifest.xml:88:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:91:13
+activity#cn.edu.bupt.niclab.activities.FileSelect
+ADDED from AndroidManifest.xml:92:9
+	android:name
+		ADDED from AndroidManifest.xml:92:19
+activity#cn.edu.bupt.niclab.activities.MainActivity
+ADDED from AndroidManifest.xml:93:9
+	android:uiOptions
+		ADDED from AndroidManifest.xml:96:13
+	android:name
+		ADDED from AndroidManifest.xml:94:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:95:13
+	tools:ignore
+		ADDED from AndroidManifest.xml:97:13
+intent-filter#android.intent.action.MAIN+android.intent.category.BROWSABLE+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:98:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:99:17
+	android:name
+		ADDED from AndroidManifest.xml:99:25
 category#android.intent.category.BROWSABLE
+ADDED from AndroidManifest.xml:101:17
+	android:name
+		ADDED from AndroidManifest.xml:101:27
+category#android.intent.category.LAUNCHER
 ADDED from AndroidManifest.xml:102:17
 	android:name
 		ADDED from AndroidManifest.xml:102:27
-category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:103:17
-	android:name
-		ADDED from AndroidManifest.xml:103:27
 service#de.blinkt.openvpn.core.OpenVPNService
-ADDED from AndroidManifest.xml:107:9
+ADDED from AndroidManifest.xml:106:9
 	android:permission
-		ADDED from AndroidManifest.xml:109:13
-	android:name
 		ADDED from AndroidManifest.xml:108:13
+	android:name
+		ADDED from AndroidManifest.xml:107:13
 intent-filter#android.net.VpnService
-ADDED from AndroidManifest.xml:110:13
+ADDED from AndroidManifest.xml:109:13
 action#android.net.VpnService
-ADDED from AndroidManifest.xml:111:17
+ADDED from AndroidManifest.xml:110:17
 	android:name
-		ADDED from AndroidManifest.xml:111:25
+		ADDED from AndroidManifest.xml:110:25
 service#de.blinkt.openvpn.api.ExternalOpenVPNService
-ADDED from AndroidManifest.xml:114:9
+ADDED from AndroidManifest.xml:113:9
 	android:permission
-		ADDED from AndroidManifest.xml:116:13
-	android:name
 		ADDED from AndroidManifest.xml:115:13
+	android:name
+		ADDED from AndroidManifest.xml:114:13
 intent-filter#de.blinkt.openvpn.api.IOpenVPNAPIService
-ADDED from AndroidManifest.xml:117:13
+ADDED from AndroidManifest.xml:116:13
 action#de.blinkt.openvpn.api.IOpenVPNAPIService
-ADDED from AndroidManifest.xml:118:17
+ADDED from AndroidManifest.xml:117:17
 	android:name
-		ADDED from AndroidManifest.xml:118:25
+		ADDED from AndroidManifest.xml:117:25
 activity#de.blinkt.openvpn.api.GrantPermissionsActivity
-ADDED from AndroidManifest.xml:122:9
+ADDED from AndroidManifest.xml:121:9
 	android:permission
-		ADDED from AndroidManifest.xml:124:13
-	android:name
 		ADDED from AndroidManifest.xml:123:13
+	android:name
+		ADDED from AndroidManifest.xml:122:13
 intent-filter#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:125:13
+ADDED from AndroidManifest.xml:124:13
 activity#de.blinkt.openvpn.api.ConfirmDialog
-ADDED from AndroidManifest.xml:129:9
+ADDED from AndroidManifest.xml:128:9
 	android:permission
-		ADDED from AndroidManifest.xml:131:13
-	android:name
 		ADDED from AndroidManifest.xml:130:13
+	android:name
+		ADDED from AndroidManifest.xml:129:13
 receiver#cn.edu.bupt.niclab.OnBootReceiver
-ADDED from AndroidManifest.xml:137:9
+ADDED from AndroidManifest.xml:136:9
 	android:name
-		ADDED from AndroidManifest.xml:137:19
+		ADDED from AndroidManifest.xml:136:19
 intent-filter#android.intent.action.BOOT_COMPLETED
-ADDED from AndroidManifest.xml:138:13
+ADDED from AndroidManifest.xml:137:13
 	android:priority
-		ADDED from AndroidManifest.xml:138:28
+		ADDED from AndroidManifest.xml:137:28
 action#android.intent.action.BOOT_COMPLETED
-ADDED from AndroidManifest.xml:139:17
+ADDED from AndroidManifest.xml:138:17
 	android:name
-		ADDED from AndroidManifest.xml:139:25
+		ADDED from AndroidManifest.xml:138:25
 activity#cn.edu.bupt.niclab.activities.ConfigConverter
-ADDED from AndroidManifest.xml:143:9
+ADDED from AndroidManifest.xml:142:9
 	android:label
-		ADDED from AndroidManifest.xml:145:13
-	android:uiOptions
-		ADDED from AndroidManifest.xml:146:13
-	android:name
 		ADDED from AndroidManifest.xml:144:13
+	android:uiOptions
+		ADDED from AndroidManifest.xml:145:13
+	android:name
+		ADDED from AndroidManifest.xml:143:13
 	tools:ignore
-		ADDED from AndroidManifest.xml:147:13
+		ADDED from AndroidManifest.xml:146:13
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from AndroidManifest.xml:148:13
+ADDED from AndroidManifest.xml:147:13
 	android:label
-		ADDED from AndroidManifest.xml:148:28
+		ADDED from AndroidManifest.xml:147:28
 action#android.intent.action.VIEW
-ADDED from AndroidManifest.xml:149:17
+ADDED from AndroidManifest.xml:148:17
 	android:name
-		ADDED from AndroidManifest.xml:149:25
+		ADDED from AndroidManifest.xml:148:25
 category#android.intent.category.DEFAULT
-ADDED from AndroidManifest.xml:151:17
+ADDED from AndroidManifest.xml:150:17
 	android:name
-		ADDED from AndroidManifest.xml:151:27
+		ADDED from AndroidManifest.xml:150:27
 data
-ADDED from AndroidManifest.xml:154:17
+ADDED from AndroidManifest.xml:153:17
 	android:mimeType
-		ADDED from AndroidManifest.xml:154:23
+		ADDED from AndroidManifest.xml:153:23
 activity#cn.edu.bupt.niclab.LaunchVPN
-ADDED from AndroidManifest.xml:183:9
+ADDED from AndroidManifest.xml:182:9
 	android:label
-		ADDED from AndroidManifest.xml:186:13
-	android:theme
-		ADDED from AndroidManifest.xml:187:13
-	android:excludeFromRecents
 		ADDED from AndroidManifest.xml:185:13
-	android:name
-		ADDED from AndroidManifest.xml:184:13
-	tools:ignore
-		ADDED from AndroidManifest.xml:188:13
-intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT
-ADDED from AndroidManifest.xml:189:13
-activity#cn.edu.bupt.niclab.activities.CreateShortcuts
-ADDED from AndroidManifest.xml:195:9
-	android:label
-		ADDED from AndroidManifest.xml:198:13
 	android:theme
-		ADDED from AndroidManifest.xml:199:13
+		ADDED from AndroidManifest.xml:186:13
 	android:excludeFromRecents
-		ADDED from AndroidManifest.xml:197:13
+		ADDED from AndroidManifest.xml:184:13
 	android:name
-		ADDED from AndroidManifest.xml:196:13
-intent-filter#android.intent.action.CREATE_SHORTCUT+android.intent.category.DEFAULT
-ADDED from AndroidManifest.xml:200:13
-action#android.intent.action.CREATE_SHORTCUT
-ADDED from AndroidManifest.xml:201:17
-	android:name
-		ADDED from AndroidManifest.xml:201:25
-provider#cn.edu.bupt.niclab.FileProvider
-ADDED from AndroidManifest.xml:207:9
-	android:grantUriPermissions
-		ADDED from AndroidManifest.xml:211:13
-	android:exported
-		ADDED from AndroidManifest.xml:210:13
-	android:authorities
-		ADDED from AndroidManifest.xml:209:13
-	android:name
-		ADDED from AndroidManifest.xml:208:13
+		ADDED from AndroidManifest.xml:183:13
 	tools:ignore
-		ADDED from AndroidManifest.xml:212:13
-activity#cn.edu.bupt.niclab.account.LoginActivity
-ADDED from AndroidManifest.xml:214:9
-	android:name
-		ADDED from AndroidManifest.xml:214:19
-activity#cn.sharesdk.framework.ShareSDKUIShell
-ADDED from AndroidManifest.xml:225:9
-	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:230:13
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:228:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:227:13
+		ADDED from AndroidManifest.xml:187:13
+intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:188:13
+activity#cn.edu.bupt.niclab.activities.CreateShortcuts
+ADDED from AndroidManifest.xml:194:9
+	android:label
+		ADDED from AndroidManifest.xml:197:13
 	android:theme
-		ADDED from AndroidManifest.xml:229:13
+		ADDED from AndroidManifest.xml:198:13
+	android:excludeFromRecents
+		ADDED from AndroidManifest.xml:196:13
 	android:name
-		ADDED from AndroidManifest.xml:226:13
-service#com.umeng.update.net.DownloadingService
-ADDED from AndroidManifest.xml:244:9
-	android:process
-		ADDED from AndroidManifest.xml:246:13
+		ADDED from AndroidManifest.xml:195:13
+intent-filter#android.intent.action.CREATE_SHORTCUT+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:199:13
+action#android.intent.action.CREATE_SHORTCUT
+ADDED from AndroidManifest.xml:200:17
 	android:name
-		ADDED from AndroidManifest.xml:245:13
-activity#com.umeng.update.UpdateDialogActivity
-ADDED from AndroidManifest.xml:249:9
-	android:theme
-		ADDED from AndroidManifest.xml:251:13
-	android:name
-		ADDED from AndroidManifest.xml:250:13
-activity#cn.edu.bupt.niclab.activities.UpdateActivity
-ADDED from AndroidManifest.xml:255:9
-	android:label
-		ADDED from AndroidManifest.xml:257:13
-	android:theme
-		ADDED from AndroidManifest.xml:258:13
-	android:name
-		ADDED from AndroidManifest.xml:256:13
-activity#cn.edu.bupt.niclab.activities.BaseActivity
-ADDED from AndroidManifest.xml:260:9
-	android:label
-		ADDED from AndroidManifest.xml:262:13
-	android:name
-		ADDED from AndroidManifest.xml:261:13
-activity#cn.edu.bupt.niclab.activities.FeedbackActivity
-ADDED from AndroidManifest.xml:264:9
-	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:267:13
-	android:label
-		ADDED from AndroidManifest.xml:266:13
-	android:name
-		ADDED from AndroidManifest.xml:265:13
-activity#cn.edu.bupt.niclab.activities.ShareAppActivity
-ADDED from AndroidManifest.xml:269:9
-	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:272:13
-	android:label
-		ADDED from AndroidManifest.xml:271:13
-	android:name
-		ADDED from AndroidManifest.xml:270:13
-service#cn.edu.bupt.niclab.services.RecordInfoService
-ADDED from AndroidManifest.xml:275:9
+		ADDED from AndroidManifest.xml:200:25
+provider#cn.edu.bupt.niclab.FileProvider
+ADDED from AndroidManifest.xml:206:9
+	android:grantUriPermissions
+		ADDED from AndroidManifest.xml:210:13
 	android:exported
-		ADDED from AndroidManifest.xml:277:13
+		ADDED from AndroidManifest.xml:209:13
+	android:authorities
+		ADDED from AndroidManifest.xml:208:13
 	android:name
+		ADDED from AndroidManifest.xml:207:13
+	tools:ignore
+		ADDED from AndroidManifest.xml:211:13
+activity#cn.edu.bupt.niclab.account.LoginActivity
+ADDED from AndroidManifest.xml:213:9
+	android:name
+		ADDED from AndroidManifest.xml:213:19
+activity#cn.sharesdk.framework.ShareSDKUIShell
+ADDED from AndroidManifest.xml:224:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:229:13
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:227:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:226:13
+	android:theme
+		ADDED from AndroidManifest.xml:228:13
+	android:name
+		ADDED from AndroidManifest.xml:225:13
+service#com.umeng.update.net.DownloadingService
+ADDED from AndroidManifest.xml:243:9
+	android:process
+		ADDED from AndroidManifest.xml:245:13
+	android:name
+		ADDED from AndroidManifest.xml:244:13
+activity#com.umeng.update.UpdateDialogActivity
+ADDED from AndroidManifest.xml:248:9
+	android:theme
+		ADDED from AndroidManifest.xml:250:13
+	android:name
+		ADDED from AndroidManifest.xml:249:13
+activity#cn.edu.bupt.niclab.activities.UpdateActivity
+ADDED from AndroidManifest.xml:254:9
+	android:label
+		ADDED from AndroidManifest.xml:256:13
+	android:theme
+		ADDED from AndroidManifest.xml:257:13
+	android:name
+		ADDED from AndroidManifest.xml:255:13
+activity#cn.edu.bupt.niclab.activities.BaseActivity
+ADDED from AndroidManifest.xml:259:9
+	android:label
+		ADDED from AndroidManifest.xml:261:13
+	android:name
+		ADDED from AndroidManifest.xml:260:13
+activity#cn.edu.bupt.niclab.activities.FeedbackActivity
+ADDED from AndroidManifest.xml:263:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:266:13
+	android:label
+		ADDED from AndroidManifest.xml:265:13
+	android:name
+		ADDED from AndroidManifest.xml:264:13
+activity#cn.edu.bupt.niclab.activities.ShareAppActivity
+ADDED from AndroidManifest.xml:268:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:271:13
+	android:label
+		ADDED from AndroidManifest.xml:270:13
+	android:name
+		ADDED from AndroidManifest.xml:269:13
+service#cn.edu.bupt.niclab.services.RecordInfoService
+ADDED from AndroidManifest.xml:274:9
+	android:exported
 		ADDED from AndroidManifest.xml:276:13
+	android:name
+		ADDED from AndroidManifest.xml:275:13
+activity#cn.edu.bupt.niclab.activities.CheckIPv6ConnectionActivity
+ADDED from AndroidManifest.xml:279:9
+	android:label
+		ADDED from AndroidManifest.xml:281:13
+	android:name
+		ADDED from AndroidManifest.xml:280:13
+activity#cn.edu.bupt.niclab.activities.APPDetailActivity
+ADDED from AndroidManifest.xml:283:9
+	android:label
+		ADDED from AndroidManifest.xml:285:13
+	android:name
+		ADDED from AndroidManifest.xml:284:13
+service#cn.edu.bupt.niclab.services.FileDownloadService
+ADDED from AndroidManifest.xml:288:9
+	android:exported
+		ADDED from AndroidManifest.xml:290:13
+	android:name
+		ADDED from AndroidManifest.xml:289:13
+activity#cn.edu.bupt.niclab.activities.APPManageActivity
+ADDED from AndroidManifest.xml:293:9
+	android:label
+		ADDED from AndroidManifest.xml:295:13
+	android:name
+		ADDED from AndroidManifest.xml:294:13
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
-MERGED from com.android.support:support-v4:20.0.0:16:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.daimajia.numberprogressbar:library:1.2:7:5
+MERGED from com.ms-square:expandableTextView:0.1.3:5:5
+MERGED from com.android.support:support-v13:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0

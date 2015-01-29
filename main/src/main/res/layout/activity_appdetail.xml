@@ -1,12 +1,146 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent" 
     tools:context="cn.edu.bupt.niclab.activities.APPDetailActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:background="@drawable/app_detail_bottom_bar_bg"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_height="?android:attr/actionBarSize">
+        <Button
+            android:id="@+id/install"
+            android:text="@string/install"
+            android:onClick="onInstallBtnClicked"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="@drawable/install_btn_bg"
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="match_parent" />
 
+    </RelativeLayout>
+    
+    <ScrollView
+        android:layout_above="@id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:src="@drawable/icon_default"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp" />
+                <TextView
+                    android:id="@+id/name"
+                    android:text="QQ"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/icon"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/label"
+                    android:text="@string/app_label"
+                    android:textSize="16sp"
+                    android:layout_below="@id/name"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/icon"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#353535"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/version"
+                    android:text="@string/app_version"
+                    android:textSize="16sp"
+                    android:layout_below="@id/label"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/icon"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#353535"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                
+            </RelativeLayout>
+            
+            <TextView
+                android:text="@string/screen_shot"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+                <LinearLayout
+                    android:id="@+id/screen_shot_layout"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+                    
+                    </LinearLayout>
+                
+            </HorizontalScrollView>
+
+            <TextView
+                android:text="@string/app_description"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.ms.square.android.expandabletextview.ExpandableTextView
+                xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/expand_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                expandableTextView:maxCollapsedLines="8"
+                expandableTextView:animDuration="200">
+                <TextView
+                    android:id="@id/expandable_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#666666" />
+                <ImageButton
+                    android:id="@id/expand_collapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_gravity="right|bottom"
+                    android:background="@android:color/transparent"/>
+            </com.ms.square.android.expandabletextview.ExpandableTextView>
+        </LinearLayout>
+    </ScrollView>
+    
 </RelativeLayout>

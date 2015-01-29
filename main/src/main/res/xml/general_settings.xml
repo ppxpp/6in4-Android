@@ -3,11 +3,9 @@
   ~ Distributed under the GNU GPL v2. For full terms see the file doc/LICENSE.txt
   -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="screen">
 
-    <PreferenceCategory
-        android:key="app_vpn"
-        android:title="@string/appvpn">
         <Preference
             android:key="vpn"
             android:persistent="false"
@@ -30,6 +28,14 @@
                 android:targetPackage="cn.edu.bupt.niclab"
                 android:targetClass="cn.edu.bupt.niclab.activities.CheckIPv6ConnectionActivity"/>
         </Preference>
+
+
+        <!--<Preference
+            android:title="@string/app_manage_menu" >
+            <intent
+                android:targetPackage="cn.edu.bupt.niclab"
+                android:targetClass="cn.edu.bupt.niclab.activities.APPManageActivity"/>
+        </Preference>-->
 
         <!-- opens another nested subscreen -->
         <PreferenceScreen
@@ -85,10 +91,9 @@
 
         </PreferenceScreen>
 
-    </PreferenceCategory>
 
 
-    <PreferenceCategory
+    <!--<PreferenceCategory
         android:key="device_hacks"
         android:title="@string/device_specific">
         <CheckBoxPreference
@@ -101,11 +106,9 @@
             android:key="loadTunModule"
             android:summary="@string/setting_loadtun_summary"
             android:title="@string/setting_loadtun" />
-    </PreferenceCategory>
+    </PreferenceCategory>-->
 
-    <PreferenceCategory
-        android:key="app_other"
-        android:title="@string/appother">
+
         <Preference
             android:defaultValue="false"
             android:key="update"
@@ -114,6 +117,5 @@
             android:defaultValue="false"
             android:key="feedback"
             android:title="@string/feed_back" />
-    </PreferenceCategory>
 
 </PreferenceScreen>

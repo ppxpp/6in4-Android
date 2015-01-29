@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-</selector>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="#aaa"/>
+    </item>
+    <item android:top="0.5dp">
+        <color android:color="#f7f7f7"/>
+    </item>
+</layer-list>

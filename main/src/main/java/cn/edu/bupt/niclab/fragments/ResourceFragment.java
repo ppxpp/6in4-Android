@@ -57,8 +57,8 @@ public class ResourceFragment extends BaseFragment {
                 editor.putLong("load_time", curt_time);
                 editor.commit();
             }
-            //mWebView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
-            mWebView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
+            mWebView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+            //mWebView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
             MWebViewClient client = new MWebViewClient();
             mWebView.setWebViewClient(client);
             mWebView.getSettings().setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
