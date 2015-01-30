@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Environment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.daimajia.numberprogressbar.NumberProgressBar;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -216,7 +218,11 @@ public class APPInfoListAdapter extends BaseAdapter {
                 }else if (wrapper.curtDownloadState == APPDetailActivity.DownloadState.Installed){
                     //LAUNCH
                     Intent LaunchIntent = v.getContext().getPackageManager().getLaunchIntentForPackage(wrapper.appInfo.getPackageName());
-                    v.getContext().startActivity(LaunchIntent);
+                    if (LaunchIntent == null) {
+                        Toast.makeText(v.getContext(), R.string.cannot_launch_hint, Toast.LENGTH_SHORT).show();
+                    }else {
+                        v.getContext().startActivity(LaunchIntent);
+                    }
                 }
             }
         }

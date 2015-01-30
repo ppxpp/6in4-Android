@@ -420,6 +420,7 @@
     <string name="loading">Loading</string>
     <string name="install">Install</string>
     <string name="launch">Launch</string>
+    <string name="cannot_launch_hint">Can not launch this APP</string>
     
     <!-- APP下载通知栏-->
     <string name="download_title">Download %1$s</string>

@@ -67,7 +67,7 @@
         -->
         <meta-data
             android:name="UMENG_CHANNEL"
-            android:value="baidu" />
+            android:value="website" />
 
         <activity
             android:name="com.umeng.fb.ConversationActivity"
